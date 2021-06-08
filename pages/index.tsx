@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Htag, Button, Ptag, Tag, Rating } from '../components';
 import { withLayout } from '../layout/Layout';
 import axios from 'axios';
-import { MenuItem } from '../interfaces/menu.interfaces';
+import { MenuItem } from '../interfaces/menu.interface';
 
 function Home({ menu }: HomeProps): JSX.Element {
 	const [rating, setRating] = useState<number>(4);
@@ -22,6 +22,12 @@ function Home({ menu }: HomeProps): JSX.Element {
 				tag
 			</Tag>
 			<Tag size="s" color="green">
+				tag
+			</Tag>
+			<Tag size="s" color="ghost">
+				tag
+			</Tag>
+			<Tag size="s" color="gray">
 				tag
 			</Tag>
 			<Tag size="m" color="primary">

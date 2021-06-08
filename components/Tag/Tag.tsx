@@ -5,7 +5,7 @@ import cn from 'classnames';
 export const Tag = ({
 	size = 'm',
 	children,
-	color = 'ghots',
+	color = 'ghost',
 	href,
 	className,
 	...props
