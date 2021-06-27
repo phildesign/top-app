@@ -23,6 +23,8 @@ export const AppContextProvider = ({
 		setMenuState(newMenu);
 	};
 	return (
-		<AppContext.Provider value={{ menu: menuState, firstCategory }}>{children}</AppContext.Provider>
+		<AppContext.Provider value={{ menu: menuState, firstCategory, setMenu }}>
+			{children}
+		</AppContext.Provider>
 	);
 };
