@@ -4,6 +4,7 @@ import { Htag, Button, Ptag, Tag, Rating, Input } from '../components';
 import { withLayout } from '../layout/Layout';
 import axios from 'axios';
 import { MenuItem } from '../interfaces/menu.interface';
+import { Textarea } from '../components/Textarea/Textarea';
 
 function Home({ menu }: HomeProps): JSX.Element {
 	const [rating, setRating] = useState<number>(4);
@@ -35,6 +36,7 @@ function Home({ menu }: HomeProps): JSX.Element {
 			</Tag>
 			<Rating rating={rating} isEditable setRating={setRating} />
 			<Input placeholder="test" />
+			<Textarea />
 		</>
 	);
 }
