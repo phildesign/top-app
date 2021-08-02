@@ -16,7 +16,7 @@ export const Rating = forwardRef(
 			constructRating(rating);
 		}, [rating, tabIndex]);
 
-		const computeFocus = (r: rating, i: number): number => {
+		const computeFocus = (r: number, i: number): number => {
 			if (!isEditable) {
 				return -1;
 			}
@@ -65,7 +65,7 @@ export const Rating = forwardRef(
 			setRating(i);
 		};
 
-		const handleKey = (i: number, e: KeyboardEvent) => {
+		const handleKey = (e: KeyboardEvent) => {
 			if (!isEditable || !setRating) {
 				return;
 			}
