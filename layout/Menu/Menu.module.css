@@ -26,6 +26,11 @@
 	fill: var(--primary);
 }
 
+.firstLevelList {
+	list-style: none;
+	padding: 0;
+}
+
 .secondLevel {
 	font-size: 12px;
 	font-weight: 300;
@@ -33,16 +38,22 @@
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	cursor: pointer;
+	background: none;
+	border: none;
+	padding: 0;
 }
 
 .secondBlock {
 	border-left: 1px solid #dfdfdf;
-	padding-left: 32px;
+	padding: 0 0 0 32px;
 	margin-top: 15px;
 	margin-left: 12px;
+	list-style: none;
 }
 
 .secondLevelBlock {
+	list-style: none;
+	padding: 0;
 	overflow: hidden;
 }
 
