@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prepare": "husky install",
     "dev": "next dev",
     "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
@@ -28,6 +29,7 @@
     "eslint": "^7.27.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "framer-motion": "^4.1.17",
+    "husky": "^7.0.1",
     "react-hook-form": "^7.11.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
