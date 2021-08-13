@@ -3,10 +3,11 @@ body {
 	margin: 0;
 
 	padding: 0;
+
 	color: var(--black);
+	background: #f5f6f8;
 
 	font-family: var(--font-family);
-	background: #f5f6f8;
 }
 
 a {
@@ -20,10 +21,12 @@ a {
 }
 
 .visualyHidden {
+	position: absolute;
+
+	overflow: hidden;
+
 	width: 0;
 	height: 0;
-	overflow: hidden;
-	position: absolute;
 }
 
 :root {
